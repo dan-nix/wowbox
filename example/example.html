@@ -5,13 +5,24 @@
 
 <style>
 body {
-  background-color: black;
+  background-color: #222;
   color: white;
+}
+
+#container {
+
 }
 </style>
 
 </head>
 <body>
+
+<script>
+initializeWowBox();
+</script>
+
+<div id='container'>
+
 <h1>WowBox Examples</h1>
 <a href="http://dannix.net/wowbox" style='color:#ddd'>http://dannix.net/wowbox</a>
 <p>&nbsp;</p>
@@ -89,21 +100,11 @@ $('#ex-8').wowbox({
     src: "example-image.png",
   });
 </script>
-
-
-
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
 
-<script>
-// cheap hack to flicker the page to initiate the canvasses
-$(document).ready(function() {
-    $('html, body').animate({scrollTop: 1000}, 100);   
-});
+</div>
 
 </body>
 </html>
