@@ -1,0 +1,108 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+<script src='../src/jquery.wowbox.js'></script>
+
+<style>
+body {
+  background-color: black;
+  color: white;
+}
+</style>
+
+</head>
+<body>
+<h1>WowBox Examples</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<h2>Center of page:</h2>
+<center><div id='ex-1' ></div></center>
+<script>
+$('#ex-1').wowbox({
+    src: "example-image.png",
+  });
+</script>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2>Side by side:</h2>
+<div id='ex-2' style='display: inline;'></div>
+<script>
+$('#ex-2').wowbox({
+    src: "example-image.png",
+  });
+</script>
+
+<div id='ex-3' style='display: inline;'></div>
+<script>
+$('#ex-3').wowbox({
+    src: "example-image.png",
+  });
+</script>
+
+<div id='ex-4' style='display: inline;'></div>
+<script>
+$('#ex-4').wowbox({
+    src: "example-image.png",
+  });
+</script>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2>Image Gallery:</h2>
+<div id='ex-5' style='display: inline;'></div>
+<script>
+$('#ex-5').wowbox({
+    src: "example-slide-1.jpg",
+  });
+</script>
+
+<div id='ex-6' style='display: inline;'></div>
+<script>
+$('#ex-6').wowbox({
+    src: "example-slide-2.jpg",
+  });
+</script>
+
+<div id='ex-7' style='display: inline;'></div>
+<script>
+$('#ex-7').wowbox({
+    src: "example-slide-3.jpg",
+  });
+</script>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<h2>With Text:</h2>
+<div id='ex-8' style='display: inline;'>Hello world!</div>
+<script>
+$('#ex-8').wowbox({
+    src: "example-image.png",
+  });
+</script>
+
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<script>
+// cheap hack to flicker the page to initiate the canvasses
+$(document).ready(function() {
+    $('html, body').animate({scrollTop: 1000}, 100);   
+});
+
+</body>
+</html>
