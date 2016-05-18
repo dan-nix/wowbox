@@ -215,7 +215,7 @@
             // do some math
             var windowCenterY = $(window).height() / 2;
             var canvasCenterY = canvas.getBoundingClientRect().top + (canvas.height / 2);
-            var angleX = (canvasCenterY - windowCenterY) * 0.04 * this.settings.xRotationAdjustment;
+            var angleX = (canvasCenterY - windowCenterY) * 0.04 * this.settings.xRotationAdjustment; // I have no idea what I'm doing...
 
             // do some more math
             var windowCenterX = $(window).width() / 2;
