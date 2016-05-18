@@ -10,6 +10,11 @@
  * 
  * ================================================================================== */
 
+// call this before using wowbox, 
+var initializeWowBox = function() {
+	$('body').css('height', window.innerHeight); // fix the height issue
+	$('html, body').animate({scrollTop: 1}, 1);  // cheap hack to flicker the page to initiate the canvasses
+}
 
 // the semi-colon before function invocation is a safety net against concatenated
 // scripts and/or other plugins which may not be closed properly.
@@ -178,7 +183,7 @@
             document.addEventListener("scroll", this.update.bind(this), false);
 
             // add this to $(document).ready() to initiate:
-            // $('html, body').animate({scrollTop: 200}, 2000);
+            // $('html, body').animate({scrollTop: 1}, 1);
         },
 
         setCanvasSizeByImg: function (img) {
@@ -210,7 +215,6 @@
             var ctx = canvas.getContext("2d");
             //ctx.globalCompositeOperation = "darken";
             ctx.clearRect(0, 0, canvas.width, canvas.height);
-            var sexy = true;
 
             // do some math
             var windowCenterY = $(window).height() / 2;
